@@ -13,14 +13,15 @@ public class AttackAction extends Action {
 		this.damage = damage;
 	}
 	
-	public void use(Combatant target) {
+	public void use(Combatant attacker, Combatant target) {
 		int targetAc = target.getAc();
 		if (Roll.roll(1, 20) >= targetAc) {
 			int totDamage = Roll.roll(damage);
 			target.damage(Roll.roll(damage));
-			System.out.println("Hit. Deal " + totDamage + " damage.");
+			System.out.println(attacker.getName() + " hit " + target.getName() + ", dealing " 
+					+ totDamage + " damage.");
 		} else {
-			System.out.println("Miss.");
+			System.out.println(attacker.getName() + " misses.");
 		}
 	}
 }
