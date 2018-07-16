@@ -7,7 +7,11 @@ public class Action {
 	
 	private String description;
 	
-	public Action(String description, DieX die, int n) {
+	public Action(String description) {
+		this.description = description;
+	}
+	
+	public void use() {
 		
 	}
 }

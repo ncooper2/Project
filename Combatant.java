@@ -19,7 +19,7 @@ public class Combatant {
 	 * @param p is the number of points of damage to inflict.
 	 * @return 
 	 */
-	public void damagae(int p) {
+	public void damage(int p) {
 		hp -= p;
 		if (hp < 0) {
 			hp = 0;
