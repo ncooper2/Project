@@ -4,12 +4,12 @@
  * @author Nathan
  *
  */
-public class AttackAction extends Action {
+/*public class AttackAction extends Action {
 	
 	private int[][] damage;
 	
 	public AttackAction(String description, int[][] damage) {
-		super(description);
+		//super(description);
 		this.damage = damage;
 	}
 	
@@ -24,4 +24,4 @@ public class AttackAction extends Action {
 			System.out.println(attacker.getName() + " misses.");
 		}
 	}
-}
+}*/

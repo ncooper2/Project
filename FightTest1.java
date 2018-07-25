@@ -4,15 +4,15 @@ public class FightTest1 {
 
 	public static void main(String[] args) {
 		
-		AttackAction sword = new AttackAction("Sword", new int[][] {{1, 8}});
+		/*AttackAction sword = new AttackAction("Sword", new int[][] {{1, 8}});
 		ArrayList<Action> playerActions = new ArrayList();
 		playerActions.add(sword);
-		Combatant player = new Combatant("Player", 20, 15, playerActions);
+		Combatant player = new Combatant("Player", 20, 15);
 		
 		AttackAction spear = new AttackAction("Sword", new int[][] {{1, 6}});
 		ArrayList<Action> goblinActions = new ArrayList();
 		goblinActions.add(spear);
-		Combatant goblin = new Combatant("Goblin", 12, 17, goblinActions);
+		Combatant goblin = new Combatant("Goblin", 12, 17);
 		
 		while (true) {
 			//Assuming player attacks first
@@ -40,10 +40,10 @@ public class FightTest1 {
 		}
 		
 		System.out.println("Player won " + wins + " out of " + fights + " fights. "
-				+ "The player's chance of winning is " + ((double)wins / (double)fights * 100) + "%");
+				+ "The player's chance of winning is " + ((double)wins / (double)fights * 100) + "%");*/
 	}
 	
-	public static boolean fight(Combatant c1, Combatant c2) {
+	/*public static boolean fight(Combatant c1, Combatant c2) {
 		while (true) {
 			c1.use(0, c2);
 			if (c2.getHp() == 0) {
@@ -55,6 +55,6 @@ public class FightTest1 {
 				return false;
 			}
 		}
-	}
+	}*/
 
 }

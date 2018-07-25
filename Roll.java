@@ -5,6 +5,16 @@
  *
  */
 public class Roll {
+	
+	private int[][] setRolls;
+	
+	public Roll(int[][] rolls) {
+		setRolls = rolls;
+	}
+	
+	public Roll(int n, int sides) {
+		this(new int[][] {{n, sides}});
+	}
 
 	/**
 	 * Roll a single type of die a certain number of times. 
@@ -37,5 +47,9 @@ public class Roll {
 		}
 		
 		return result;
+	}
+	
+	public int roll() {
+		return roll(setRolls);
 	}
 }
